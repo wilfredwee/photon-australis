@@ -11,7 +11,12 @@ Bringing sexy curves back to Firefox Photon.
 Because all you sexy Firefox users deserve something sexier than ugly, blocky square. (Who wants to be square, right?)
 
 ## 😍 How do I get this sexy thing? 😍
-Since Firefox 57+, the only way to customize your browser UI is through `userChrome.css`. Learn more [here](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes). Rough instructions:
+**Ensure that you are using the Dark theme. Other themes are horribly broken right now!**
+* Go to the right hamburger menu -> Customize -> At the bottom, click Themes -> select Dark.
+
+Since Firefox 57+, the only way to customize your browser UI is through `userChrome.css`. Learn more [here](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes). 
+
+Rough instructions: 
 1. Go to your Firefox browser, type `about:profiles` in your url bar.
 2. Under the profile that is in use, open the Root Directory folder.
 3. If that folder does not have a `chrome` folder, create a folder, name it `chrome`.
