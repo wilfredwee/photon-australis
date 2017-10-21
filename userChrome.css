@@ -7,6 +7,15 @@
   margin-top: 2px !important;
 }
 
+/* When the window is maximized, the first pinned tab is properly displayed. */
+#TabsToolbar  {
+  padding-inline-start: 15px !important;
+}
+
+.titlebar-placeholder {
+  border: none !important;
+}
+
 /* Hack to make sure the first tab has enough margin on the left/right due to the curves,
    Pinned tabs while in overflow will have custom margin-start calculated by Firefox dynamically, so we
    don't want to target that.
