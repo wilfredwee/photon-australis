@@ -1,15 +1,15 @@
 # 🐺 Photon Australis
 Bringing sexy curves back to Firefox Photon.
 
-![alt text](assets/images/screen-1.PNG "Photon Australis Dark Main Window")
+![alt text](assets/images/screen-1.png "Photon Australis Dark Main Window")
 <br />
 <br />
 <br />
-![alt text](assets/images/screen-2.PNG "Photon Australis Dark Top Bar")
+![alt text](assets/images/screen-2.png "Photon Australis Dark Top Bar")
 <br />
 <br />
 <br />
-![alt text](assets/images/default-theme.PNG "Photon Australis Default Theme")
+![alt text](assets/images/default-theme.png "Photon Australis Default Theme")
 
 ## Why?
 Because all you sexy Firefox users deserve something sexier than ugly, blocky square. (Who wants to be square, right?)
