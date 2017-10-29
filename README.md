@@ -6,14 +6,15 @@ Bringing sexy curves back to Firefox Photon.
 <br />
 <br />
 ![alt text](assets/images/screen-2.PNG "Photon Australis Dark Top Bar")
+<br />
+<br />
+<br />
+![alt text](assets/images/default-theme.PNG "Photon Australis Default Theme")
 
 ## Why?
 Because all you sexy Firefox users deserve something sexier than ugly, blocky square. (Who wants to be square, right?)
 
 ## 😍 How do I get this sexy thing? 😍
-**Ensure that you are using the Dark theme. Other themes are horribly broken right now!**
-* Go to the right hamburger menu -> Customize -> At the bottom, click Themes -> select Dark.
-
 Since Firefox 57+, the only way to customize your browser UI is through `userChrome.css`. Learn more [here](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes). 
 
 Rough instructions: 
@@ -21,7 +22,7 @@ Rough instructions:
 2. Under the profile that is in use, open the Root Directory folder.
 3. If that folder does not have a `chrome` folder, create a folder, name it `chrome`.
 4. In the `chrome` folder, create a file named `userChrome.css`
-5. Copy and paste the code found in [here](./userChrome.css)
+5. Copy and paste the code that matches your Firefox theme. [Dark](./userChrome-dark.css), [Default](./userChrome-default.css), [Light](./userChrome-light.css)
 6. Restart Firefox and enjoy some sexy curves :D
 
 ## 😞 Something is broken 😞
