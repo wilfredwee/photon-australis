@@ -2,6 +2,10 @@
   --tab-curve-width: 30px;
 }
 
+.arrowscrollbox-scrollbox {
+  padding-inline-start: 10px !important;
+}
+
 /* To be able to see the top border of the tab */
 .tab-stack {
   margin-top: 2px !important;
