@@ -1,5 +1,6 @@
 :root {
   --tab-curve-width: 30px;
+  --tabs-border: transparent !important;
 }
 
 .arrowscrollbox-scrollbox {
@@ -44,6 +45,8 @@
 .tabbrowser-tab > .tab-stack > .tab-background {
   background-image: none !important;
   -moz-box-orient: horizontal !important;
+  background-color: transparent !important;
+  margin-top: 1px !important;
 }
 
 .tab-background[selected="true"] {
