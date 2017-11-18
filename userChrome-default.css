@@ -61,6 +61,11 @@
   display: none !important;
 }
 
+/* Match height of new tab button (right svg) on hover */
+.tabs-newtab-button {
+  margin: 0 !important;
+}
+
 /* overlap the tab curves */
 .tab-background {
   -moz-margin-end: -15px !important;
@@ -157,7 +162,7 @@
 
 /* New tab hover customizations */
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]), .tabs-newtab-button:hover {
-  background-position: left top, 30px 2px , right bottom !important;
+  background-position: 0px 2px, 30px 3px , right bottom !important;
   background-repeat: no-repeat !important;
   background-size: 30px 30px, calc(100% - (2 * 30px)) 30px, 30px !important;
 }
