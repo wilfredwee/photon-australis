@@ -95,7 +95,7 @@
   background-repeat: no-repeat !important;
   content: "" !important;
   width: 30px !important;
-  min-height: 30px !important;
+  max-height: 30px !important;
   background-color: transparent !important;
 }
 
@@ -104,7 +104,7 @@
   background-repeat: no-repeat !important;
   content: "" !important;
   width: 30px !important;
-  min-height: 30px !important;
+  max-height: 30px !important;
   background-color: transparent !important;
 }
 
