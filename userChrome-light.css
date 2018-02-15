@@ -27,6 +27,12 @@
   border: none !important;
 }
 
+/* Windows 7 specific */
+#browser-panel .tabbrowser-tab {
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .tabbrowser-tab > .tab-stack > .tab-background {
   background-image: none !important;
   -moz-box-orient: horizontal !important;
