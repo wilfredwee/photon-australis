@@ -29,9 +29,12 @@
 
 /* Windows 7 specific */
 @media (-moz-os-version: windows-win7) {
+  .tabbrowser-tab {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
   @media (-moz-windows-default-theme) {
-    /* Show border on tabs with background colors and
-     * show the tabs toolbar background color inside tabs. */
     .tabbrowser-tab:not(:-moz-lwtheme) {
       background-color: transparent !important;
       border: none !important;
