@@ -17,6 +17,10 @@
   padding-inline-start: 15px !important;
 }
 
+#tabbrowser-tabs{
+	margin-left:-15px;
+}
+
 .titlebar-placeholder {
   border: none !important;
 }
