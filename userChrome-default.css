@@ -77,6 +77,11 @@
   -moz-margin-start: -15px !important;
 }
 
+/* Remove blue animation on tab on page load complete */
+.tab-loading-burst {
+  display: none !important;
+}
+
 /* Begin tab background customizations */
 .tab-background[selected="true"]::before {
   border: none !important;
