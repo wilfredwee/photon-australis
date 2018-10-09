@@ -108,6 +108,9 @@
 }
 
 /* Tab hover customizations */
+.close-icon:hover {
+  border-radius: 50% !important;
+}
 
 /* Regular tabs */
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::before {
