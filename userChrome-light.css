@@ -3,7 +3,7 @@
   --tabs-border: transparent !important;
 }
 
-.arrowscrollbox-scrollbox {
+.tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
   padding-inline-start: 10px !important;
 }
 
