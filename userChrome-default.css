@@ -25,6 +25,10 @@
   border: none !important;
 }
 
+.titlebar-spacer {
+  border: none !important;
+}
+
 /* Remove unneeded styles from Photon */
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {

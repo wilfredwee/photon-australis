@@ -25,6 +25,10 @@
   border: none !important;
 }
 
+.titlebar-spacer {
+  border: none !important;
+}
+
 /* Remove unneeded styles from Photon */
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {
@@ -207,6 +211,13 @@
 
   }
 }
+
+@media (-moz-windows-accent-color-in-titlebar) {
+  :root[tabsintitlebar]:not(:-moz-window-inactive) {
+    background-color: #000000 !important;
+  }
+}
+
 
 .tab-background[selected="true"]::before {
   background-image: var(--svg-selected-before) !important;
