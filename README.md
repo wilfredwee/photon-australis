@@ -27,7 +27,7 @@ Rough instructions:
     1. Select `Customize`.
     1. At the bottom left of your screen, select `Themes`.
     1. Choose or determine which theme you want to use, they can either be `Dark`, `Default`, or `Light`.
-1. Copy and paste the code that matches your Firefox theme. [Dark](./userChrome-dark.css), [Default](./userChrome-default.css), [Light](./userChrome-light.css)
+1. Copy and paste the code that matches your Firefox theme: [Dark](./userChrome-dark.css), [Default](./userChrome-default.css), [Light](./userChrome-light.css) into your `userChrome.css` file that you have created.
 <br/>**WARNING:** Newer versions of Firefox with Mojave or Windows 10 Dark Mode will cause Firefox to use the `Dark` theme by default. In this case, you should use the [userChrome-dark.css](./userChrome-dark.css) theme.
 1. Restart Firefox and enjoy some sexy curves :D
 
