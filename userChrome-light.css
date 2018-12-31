@@ -59,6 +59,9 @@
 
 .tab-background[selected="true"] {
   border: none !important;
+}
+
+.tab-background {
   pointer-events: none !important;
 }
 
