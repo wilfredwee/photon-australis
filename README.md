@@ -33,3 +33,7 @@ Rough instructions:
 
 ## 😞 Something is broken 😞
 Fret not! Please create an [issue](https://github.com/wilfredwee/photon-australis/issues/new) and I'll see what I can do.
+
+## FAQ
+### How do I add back tab separators and borders around the tabs?
+Please follow these instructions created by a helpful Redditor: https://www.reddit.com/r/FirefoxCSS/comments/bzd5dz/help_with_australis_css/
