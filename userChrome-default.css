@@ -7,14 +7,6 @@
   padding-inline-start: 10px !important;
 }
 
-/* Remove the left tab overflow button, because I can't find a way to get around the
-   dynamically-calculated margin-inline-start of the scrollbox area, and the button
-   cannot be well-placed because the curved tabs are slightly larger than normal tabs.
-*/
-.tabbrowser-arrowscrollbox > .scrollbutton-up {
-  visibility: hidden;
-}
-
 /* To be able to see the top border of the tab */
 .tab-stack {
   margin-top: 2px !important;
