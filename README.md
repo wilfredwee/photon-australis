@@ -18,7 +18,9 @@ Because all you sexy Firefox users deserve something sexier than ugly, blocky sq
 Since Firefox 57+, the only way to customize your browser UI is through `userChrome.css`. Learn more [here](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes).
 
 Rough instructions:
-1. Go to your Firefox browser, type `about:profiles` in your url bar.
+1. Go to your Firefox browser, type `about:config` in your url bar.
+1. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`
+1. Type `about:profiles` in your url bar.
 1. Under the profile that is in use (The message is something like `This is the profile in use and it cannot be deleted.`), click `Open Folder` on the `Root Directory` row.
 1. If that folder does not have a `chrome` folder, create a folder, name it `chrome`.
 1. In the `chrome` folder, create a file named `userChrome.css`
