@@ -3,6 +3,10 @@
   --tabs-border: transparent !important;
 }
 
+#navigator-toolbox:-moz-lwtheme {
+  --tabs-border-color: rgba(0,0,0,0) !important;
+}
+
 .tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
   padding-inline-start: 10px !important;
 }
