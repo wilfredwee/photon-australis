@@ -17,8 +17,12 @@
   padding-inline-start: 15px !important;
 }
 
-#tabbrowser-tabs{
-  margin-left:-15px;
+.tabbrowser-tab[first-visible-tab="true"] {
+  padding-left: 12px !important;
+}
+
+#tabbrowser-tabs {
+  margin-left: -15px !important;
 }
 
 .titlebar-placeholder {
