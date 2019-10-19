@@ -37,6 +37,15 @@
   border: none !important;
 }
 
+/* Styles to account for when tab scrollbar is visible, and margin-inline-start kicks in */
+.tabbrowser-tab[pinned="true"] {
+  width: 40px !important; /* Actual photon pinned tab is 41px, but 40px removes pixelated artifact from pinned tab favicon */
+}
+
+.tabbrowser-tab[pinned="true"][style^="margin-inline-start"] {
+  padding-left: 12px !important;
+}
+
 /* Remove unneeded styles from Photon */
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {
