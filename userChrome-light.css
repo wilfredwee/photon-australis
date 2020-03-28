@@ -16,6 +16,11 @@
   margin-top: 2px !important;
 }
 
+/* To prevent tab label appearing on pinned tab in compact mode. */
+.tab-content {
+  padding: 0 12px !important;
+}
+
 /* When the window is maximized, the first pinned tab is properly displayed. */
 #TabsToolbar  {
   padding-inline-start: 15px !important;
