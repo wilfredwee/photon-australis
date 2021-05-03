@@ -41,7 +41,7 @@
   border: none !important;
 }
 
-/* Styles to account for when window is resized small, and margin-inline-start kicks in */
+/* Styles to account for when tab scrollbar is visible, and margin-inline-start kicks in */
 .tabbrowser-tab[pinned="true"] {
   width: 40px !important; /* Actual photon pinned tab is 41px, but 40px removes pixelated artifact from pinned tab favicon */
 }
@@ -61,8 +61,25 @@
   padding-inline: 0px !important;
 }
 
+.tab-background {
+  margin-bottom: 0 !important;
+  display: flex !important;
+}
+
+.tab-background > .tab-context-line {
+  flex: 1 !important;
+}
+
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0px !important;
+}
+
+/* Remove container colors */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background-color: rgba(0,0,0,0) !important;
+  height: inherit !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
 }
 
 /* Windows 7 specific */
@@ -246,6 +263,7 @@
   }
 }
 
+/* Dark theme */
 @media (-moz-windows-accent-color-in-titlebar) {
   :root[tabsintitlebar]:not(:-moz-window-inactive) {
     background-color: #000000 !important;
@@ -262,16 +280,6 @@
 
 .tab-background[selected="true"] > .tab-context-line {
   background-image: var(--background-selected-middle) !important;
-}
-
-.tab-background {   
-  margin-bottom: 0 !important;
-  /*margin-top: 2px !important;*/
-  display: flex !important;
-}
-
-.tab-background > .tab-context-line {
-  flex: 1 !important;
 }
 
 .tabbrowser-tab[visuallyselected="true"] > .tab-stack > .tab-background {

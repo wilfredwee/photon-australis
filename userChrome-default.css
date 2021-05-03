@@ -4,74 +4,6 @@
   --tab-border-radius: 0 !important;
 }
 
-/*#main-window{ background-color: transparent !important }
-
-.browser-toolbar,
-.tab-background {
-appearance: -moz-mac-vibrant-titlebar-dark !important;
-}*/
-
-
-
-/*#TabsToolbar,.tab-background-inner,#nav-bar,.theme-dark,.theme-light,slider,.CodeMirror,.devtools-toolbar,.message,.theme-body,.table-widget-empty-text {
-   -moz-appearance: -moz-mac-vibrancy-dark !important;
-}*/
-
-
-/* Default theme customization: Vibrant (transparent, dark) titlebar for mac */
-:root:is([inFullscreen], [tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) {
-  appearance: auto !important;
-  -moz-default-appearance: -moz-mac-vibrant-titlebar-dark !important;
-  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
-  background-color: #232323 !important;
-  color: hsl(240, 9%, 98%) !important;
-  text-shadow: none !important;
-}
-
-#navigator-toolbox {
-  background-color: transparent !important;
-}
-
-#new-tab-button > .toolbarbutton-icon,
-#tabs-newtab-button > .toolbarbutton-icon {
-  fill: rgb(249,249,250) !important;
-}
-
-/*:root {
-  background: transparent !important;
-}
-
-#main-window {
-  background: transparent !important;
-}
-
-#TabsToolbar, .table-widget-empty-text {
-  -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
-  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
-}
-
-#TabsToolbar,.tab-background-inner,.theme-dark,.theme-light,slider,.CodeMirror,.devtools-toolbar,.message,.theme-body,.table-widget-empty-text {
-  -moz-appearance: -moz-mac-vibrancy-dark !important;
-}
-
-.theme-body {
-  background: transparent !important;
-}
-
-.tab-background:not([selected="true"]) {
-  -moz-appearance: -moz-mac-vibrancy-dark !important;
-}*/
-
-
-/* Remove container colors */
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
-  background-color: rgba(0,0,0,0) !important;
-  height: inherit !important;
-  border-radius: 0px !important;
-  margin: 0px !important;
-}
-
-
 .tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
   padding-inline-start: 10px !important;
 }
@@ -141,6 +73,34 @@ appearance: -moz-mac-vibrant-titlebar-dark !important;
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0px !important;
 }
+
+/* Remove container colors */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background-color: rgba(0,0,0,0) !important;
+  height: inherit !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+/* Default theme customization: Vibrant (transparent, dark) titlebar for mac */
+:root:is([inFullscreen], [tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) {
+  appearance: auto !important;
+  -moz-default-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
+  background-color: #232323 !important;
+  color: hsl(240, 9%, 98%) !important;
+  text-shadow: none !important;
+}
+
+#navigator-toolbox {
+  background-color: transparent !important;
+}
+
+#new-tab-button > .toolbarbutton-icon,
+#tabs-newtab-button > .toolbarbutton-icon {
+  fill: rgb(249,249,250) !important;
+}
+/* End default theme customizations */
 
 /* Windows 7 specific */
 @media (-moz-os-version: windows-win7) {
