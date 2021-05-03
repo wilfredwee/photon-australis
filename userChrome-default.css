@@ -1,7 +1,64 @@
 :root {
   --tab-curve-width: 30px;
   --tabs-border: transparent !important;
+  --tab-border-radius: 0 !important;
 }
+
+/*#main-window{ background-color: transparent !important }
+
+.browser-toolbar,
+.tab-background {
+appearance: -moz-mac-vibrant-titlebar-dark !important;
+}*/
+
+
+
+/*#TabsToolbar,.tab-background-inner,#nav-bar,.theme-dark,.theme-light,slider,.CodeMirror,.devtools-toolbar,.message,.theme-body,.table-widget-empty-text {
+   -moz-appearance: -moz-mac-vibrancy-dark !important;
+}*/
+
+
+/* Default theme customization: Vibrant (transparent, dark) titlebar for mac */
+:root:is([inFullscreen], [tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) {
+  appearance: auto !important;
+  -moz-default-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
+  background-color: #232323 !important;
+  color: hsl(240, 9%, 98%) !important;
+  text-shadow: none !important;
+}
+
+#navigator-toolbox {
+  background-color: transparent !important;
+}
+
+/*:root {
+  background: transparent !important;
+}
+
+#main-window {
+  background: transparent !important;
+}
+
+#TabsToolbar, .table-widget-empty-text {
+  -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
+}
+
+#TabsToolbar,.tab-background-inner,.theme-dark,.theme-light,slider,.CodeMirror,.devtools-toolbar,.message,.theme-body,.table-widget-empty-text {
+  -moz-appearance: -moz-mac-vibrancy-dark !important;
+}
+
+.theme-body {
+  background: transparent !important;
+}
+
+.tab-background:not([selected="true"]) {
+  -moz-appearance: -moz-mac-vibrancy-dark !important;
+}*/
+
+
+
 
 .tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
   padding-inline-start: 10px !important;
@@ -20,6 +77,8 @@
 /* When the window is maximized, the first pinned tab is properly displayed. */
 #TabsToolbar  {
   padding-inline-start: 15px !important;
+  min-height: 33px !important;
+  max-height: 33px !important;
 }
 
 .tabbrowser-tab[first-visible-tab="true"] {
@@ -51,6 +110,24 @@
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {
   border: none !important;
+}
+
+/* Remove uneeded styles from Proton */
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+}
+
+.tab-background {
+  margin-bottom: 0 !important;
+  display: flex !important;
+}
+
+.tab-background > .tab-context-line {
+  flex: 1 !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
 }
 
 /* Windows 7 specific */
@@ -242,9 +319,12 @@
   background-image: var(--svg-selected-after) !important;
 }
 
-.tab-background[selected="true"] > spacer {
+.tab-background[selected="true"] > .tab-context-line {
   background-image: var(--background-selected-middle) !important;
+}
 
+.tabbrowser-tab[visuallyselected="true"] > .tab-stack > .tab-background {
+  box-shadow: none !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::before {
@@ -255,9 +335,8 @@
   background-image: var(--svg-hover-after)  !important;
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > spacer {
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > .tab-context-line {
   background-image: var(--background-hover-middle) !important;
-
 }
 
 #tabs-newtab-button:hover {
