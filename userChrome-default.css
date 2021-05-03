@@ -32,6 +32,7 @@ appearance: -moz-mac-vibrant-titlebar-dark !important;
   background-color: transparent !important;
 }
 
+#new-tab-button > .toolbarbutton-icon,
 #tabs-newtab-button > .toolbarbutton-icon {
   fill: rgb(249,249,250) !important;
 }
@@ -62,6 +63,13 @@ appearance: -moz-mac-vibrant-titlebar-dark !important;
 }*/
 
 
+/* Remove container colors */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background-color: rgba(0,0,0,0) !important;
+  height: inherit !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
 
 
 .tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
