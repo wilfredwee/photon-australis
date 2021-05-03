@@ -32,7 +32,7 @@ appearance: -moz-mac-vibrant-titlebar-dark !important;
   background-color: transparent !important;
 }
 
-.toolbarbutton-icon {
+#tabs-newtab-button > .toolbarbutton-icon {
   fill: rgb(249,249,250) !important;
 }
 
