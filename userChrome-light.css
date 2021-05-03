@@ -1,6 +1,7 @@
 :root {
   --tab-curve-width: 30px;
   --tabs-border: transparent !important;
+  --tab-border-radius: 0 !important;
 }
 
 #navigator-toolbox:-moz-lwtheme {
@@ -24,6 +25,8 @@
 /* When the window is maximized, the first pinned tab is properly displayed. */
 #TabsToolbar  {
   padding-inline-start: 15px !important;
+  min-height: 33px !important;
+  max-height: 33px !important;
 }
 
 .tabbrowser-tab[first-visible-tab="true"] {
@@ -55,6 +58,32 @@
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {
   border: none !important;
+}
+
+/* Remove uneeded styles from Proton */
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+}
+
+.tab-background {
+  margin-bottom: 0 !important;
+  display: flex !important;
+}
+
+.tab-background > .tab-context-line {
+  flex: 1 !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0px !important;
+}
+
+/* Remove container colors */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background-color: rgba(0,0,0,0) !important;
+  height: inherit !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
 }
 
 /* Windows 7 specific */
@@ -245,8 +274,12 @@
   background-image: var(--svg-selected-after) !important;
 }
 
-.tab-background[selected="true"] > spacer {
+.tab-background[selected="true"] > .tab-context-line {
  background-image: var(--background-selected-middle) !important;
+}
+
+.tabbrowser-tab[visuallyselected="true"] > .tab-stack > .tab-background {
+  box-shadow: none !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::before {
@@ -257,7 +290,7 @@
   background-image: var(--svg-hover-after) !important;
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > spacer {
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > .tab-context-line {
   background-image: var(--background-hover-middle) !important;
 
 }

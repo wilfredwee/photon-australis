@@ -1,5 +1,5 @@
 # 🐺 Photon Australis
-Bringing sexy curves back to Firefox Photon.
+Bringing sexy curves back to Firefox Photon AND Proton.
 
 ![alt text](assets/images/screen-1.png "Photon Australis Dark Main Window")
 <br />
@@ -14,10 +14,17 @@ Bringing sexy curves back to Firefox Photon.
 ## Why?
 Because all you sexy Firefox users deserve something sexier than ugly, blocky square. (Who wants to be square, right?)
 
+## ⚠ Support note ⚠:
+This is a ***NEW*** release that supports Firefox Proton (version 89+). If you are running an older version of Firefox with Photon, please visit [this link](https://github.com/wilfredwee/photon-australis/tree/0.10).
+
+This is regular used and tested by me in these following configurations:
+1. Firefox Developer Edition on Dark Theme + Windows 10 on Dark Theme.
+1. Firefox Developer Edition on Default Theme + MacOS on Dark Theme.
+
 ## 😍 How do I get this sexy thing? 😍
 Since Firefox 57+, the only way to customize your browser UI is through `userChrome.css`. Learn more [here](http://kb.mozillazine.org/index.php?title=UserChrome.css&printable=yes).
 
-Rough instructions:
+### General Instructions:
 1. Go to your Firefox browser, type `about:config` in your url bar.
 1. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`
 1. Type `about:profiles` in your url bar.
@@ -33,9 +40,15 @@ Rough instructions:
 <br/>**WARNING:** Newer versions of Firefox with Mojave or Windows 10 Dark Mode will cause Firefox to use the `Dark` theme by default. In this case, you should use the [userChrome-dark.css](./userChrome-dark.css) theme.
 1. Restart Firefox and enjoy some sexy curves :D
 
+### Special Instructions for Default Theme users:
+If you are using the [Default Theme](./userChrome-default.css) but your MacOS is using the Dark Theme, you can go to `about:config` -> search for `ui.systemUsesDarkTheme` and **ADD** (click the '+' sign) a ***Number***. Set the value to `0`. Restart the browser.
+
 ## 😞 Something is broken 😞
-Fret not! Please create an [issue](https://github.com/wilfredwee/photon-australis/issues/new) and I'll see what I can do.
+Fell free to create an [issue](https://github.com/wilfredwee/photon-australis/issues/new) and I'll see what I can do. However, I'm unable to guarantee quick (or any) responses as this project is in maintenance mode.
 
 ## FAQ
 ### How do I add back tab separators and borders around the tabs?
 Please follow these instructions created by a helpful Redditor: https://www.reddit.com/r/FirefoxCSS/comments/bzd5dz/help_with_australis_css/
+
+### Nothing has changed for me
+Make sure that your file extension for `userChrome.css` is correct. Most likely a problem for Windows, refer to [this issue](https://github.com/wilfredwee/photon-australis/issues/104). 
