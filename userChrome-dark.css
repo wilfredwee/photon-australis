@@ -15,7 +15,7 @@
 
 /* To prevent tab label appearing on pinned tab in compact mode. */
 .tab-content {
-  padding: 0 12px !important;
+  padding: 0 20px !important;
 }
 
 /* When the window is maximized, the first pinned tab is properly displayed. */
@@ -43,7 +43,7 @@
 
 /* Styles to account for when tab scrollbar is visible, and margin-inline-start kicks in */
 .tabbrowser-tab[pinned="true"] {
-  width: 40px !important; /* Actual photon pinned tab is 41px, but 40px removes pixelated artifact from pinned tab favicon */
+  width: 44px !important; /* Actual photon pinned tab is 41px, but 40px removes pixelated artifact from pinned tab favicon */
 }
 
 .tabbrowser-tab[pinned="true"][style^="margin-inline-start"] {
@@ -72,6 +72,10 @@
 
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0px !important;
+}
+
+.tabbrowser-tab {
+  margin-inline-start: -16px !important;
 }
 
 /* Remove container colors */
@@ -140,16 +144,29 @@
 .tab-background[selected="true"]::before {
   border: none !important;
   content: "" !important;
-  width: 30px !important;
+  width: 38px !important;
   min-height: 30px !important;
   display: -moz-box !important;
   background-repeat: no-repeat !important;
 }
 
+.tabbrowser-tab[pinned="true"][first-visible-tab="true"] .tab-background::before,
+.tabbrowser-tab[pinned="true"][first-visible-tab="true"]:hover > .tab-stack > .tab-background:not([selected=true])::before {
+  width: 42px !important;
+}
+
+.tabbrowser-tab[pinned="true"][first-visible-tab="true"] .tab-content {
+  padding: 0px 18px 0px 22px !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: -16px !important;
+}
+
 .tab-background[selected="true"]::after {
   border: none !important;
   content: "" !important;
-  width: 30px !important;
+  width: 38px !important;
   min-height: 30px !important;
   display: -moz-box !important;
   background-repeat: no-repeat !important;
@@ -176,7 +193,7 @@
   display: -moz-box !important;
   background-repeat: no-repeat !important;
   content: "" !important;
-  width: 30px !important;
+  width: 38px !important;
   max-height: 30px !important;
   background-color: transparent !important;
 }
@@ -185,7 +202,7 @@
   display: -moz-box !important;
   background-repeat: no-repeat !important;
   content: "" !important;
-  width: 30px !important;
+  width: 38px !important;
   max-height: 30px !important;
   background-color: transparent !important;
 }
@@ -273,6 +290,7 @@
 
 .tab-background[selected="true"]::before {
   background-image: var(--svg-selected-before) !important;
+  background-position: right top;
 }
 .tab-background[selected="true"]::after {
   background-image: var(--svg-selected-after) !important;
@@ -289,6 +307,7 @@
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::before {
   background-image: var(--svg-hover-before) !important;
+  background-position: right top;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::after {
@@ -301,4 +320,5 @@
 
 #tabs-newtab-button:hover {
   background-image: var(--newtab-hover) !important;
+  margin-inline-start: -16px !important;
 }
