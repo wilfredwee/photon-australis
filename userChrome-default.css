@@ -334,3 +334,7 @@ tabbrowser-tab[pinned="true"][first-visible-tab="true"] .tab-background::before,
   background-image: var(--newtab-hover) !important;
   margin-inline-start: -16px !important;
 }
+
+#TabsToolbar-customization-target {
+ margin-bottom: -4.7px;
+}
