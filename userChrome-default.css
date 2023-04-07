@@ -20,7 +20,6 @@
 
 /* When the window is maximized, the first pinned tab is properly displayed. */
 #TabsToolbar  {
-  padding-inline-start: 15px !important;
   min-height: 33px !important;
   max-height: 33px !important;
 }
@@ -29,21 +28,12 @@
   padding-left: 12px !important;
 }
 
-#tabbrowser-tabs {
-  margin-left: -15px !important;
-}
-
 .titlebar-placeholder {
   border: none !important;
 }
 
 .titlebar-spacer {
   border: none !important;
-}
-
-/* Styles to account for when tab scrollbar is visible, and margin-inline-start kicks in */
-.tabbrowser-tab[pinned="true"] {
-  width: 44px !important; /* Actual photon pinned tab is 41px, but 40px removes pixelated artifact from pinned tab favicon */
 }
 
 .tabbrowser-tab[pinned="true"][style^="margin-inline-start"] {
@@ -334,7 +324,13 @@ tabbrowser-tab[pinned="true"][first-visible-tab="true"] .tab-background::before,
   background-image: var(--newtab-hover) !important;
   margin-inline-start: -16px !important;
 }
-
+/*New Additions*/
 #TabsToolbar-customization-target {
- margin-bottom: -4.7px;
+ margin-bottom: -5.5px;
+}
+#tabbrowser-tabs {
+ border-left-width: 0px !important;
+}
+.tabbrowser-tab[pinned="true"] {
+  width: 55px;
 }
