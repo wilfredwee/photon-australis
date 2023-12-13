@@ -1,6 +1,8 @@
 # 🐺 Photon Australis
 Bringing sexy curves back to Firefox Photon AND Proton.
 
+# **NOTE**: This project is no longer active.
+
 ![alt text](assets/images/screen-1.png "Photon Australis Dark Main Window")
 <br />
 <br />
