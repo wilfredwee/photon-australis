@@ -63,6 +63,7 @@
 /* Remove uneeded styles from Proton */
 .tabbrowser-tab {
   padding-inline: 0px !important;
+  overflow: unset !important;
 }
 
 .tab-background {
